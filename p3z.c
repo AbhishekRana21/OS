@@ -4,15 +4,14 @@
 int main(){
 	int x = fork();
 	if(x == 0){
-		sleep(5);
 		printf("Child Process ID: %d\n", getpid());
-		printf("Child Terminated After 5 Seconds");
+		printf("Child Terminated");
 	}
 	else{
-		
+		sleep(5);
 		printf("Parent Process ID: %d\n", getpid());
 		printf("Child has become a zombie");
-		printf("Parent Terminated");
+		printf("Parent Terminated After 5 Seconds");
 	}
 	return 0;
 }
