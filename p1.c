@@ -1,6 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
+#include<unistd.h>
 
 int main(){
-	printf("Hello World");
-	return 0;
+        fork();
+        printf("PID = %d\n", getpid());
+        printf("PPID = %d\n", getppid());
+        return 0;
 }
