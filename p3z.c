@@ -9,8 +9,8 @@ int main(){
 	}
 	else{
 		sleep(5);
-		printf("\nParent Process ID: %d\n", getpid());
-		printf("Child has become a zombie");
+		printf("Parent Process ID: %d\n", getpid());
+		printf("Child has become a zombie\n");
 		printf("Parent Terminated After 5 Seconds\n");
 	}
 	return 0;
